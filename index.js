@@ -130,7 +130,7 @@ async function addJiraTicket(jira, tools) {
     owner: tools.context.repo.owner,
     repo: tools.context.repo.repo,
     issue_number: tools.context.issue.number,
-    body: `Issue: ${jiraIssue}`
+    body: `Issue: [${jiraIssue}]`
   });
   tools.log.complete("Creating Issue comment with Jira Issue number");
   return result;
